@@ -1,3 +1,4 @@
+//act1
 const num= 20;
 if(num>0){
     console.log(`${num} is positive` );
@@ -9,6 +10,7 @@ else{
     console.log("it is zero");
 }
 
+//act2
 const num1= 20;
 const num2= 50;
 const num3= 40;
@@ -31,3 +33,31 @@ else{
 
 }
 
+//act3
+
+const marks = 70 ;
+switch (true) {
+
+    case (marks>90):
+        console.log("A");
+        break;
+    case (marks>80):
+        console.log("B");
+        break;
+    case (marks>70):
+        console.log("C");
+        break;
+    case (marks>60):
+        console.log("D");
+        break;
+    
+
+    default:
+        console.log("F");
+        break;
+}
+
+//ACT4
+
+const numm =22;
+numm%2==0 ? console.log("evev") :  console.log("odd");
