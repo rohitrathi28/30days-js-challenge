@@ -32,3 +32,26 @@ function Square(num) {
     return `${str1} ${str2}`;
   }
   console.log(concatStr("rohit", "rathi"))
+
+
+  const sum = (a, b) => {
+    return a + b;
+}
+
+const answer = sum(10, 20);
+console.log(answer); //output:- 30
+
+//Task-6:- write an arrow function to check if a string contains a specific character return a boolean value. 
+
+const containsCharacter = (str, char) => {
+    return str.includes(char);
+}
+
+const stringAt = containsCharacter("Good, morning!", "m");
+
+function greeting(name, age = 20) {
+  return `Hello, ${name}! You age ${age} years old.`;
+}
+
+const greeting1 = greeting("Sam", 22);
+console.log(greeting1); 
