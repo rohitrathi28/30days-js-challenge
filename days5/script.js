@@ -55,3 +55,56 @@ function greeting(name, age = 20) {
 
 const greeting1 = greeting("Sam", 22);
 console.log(greeting1); 
+
+
+
+// function func1() {
+//   console.log("hello")
+// }
+
+
+// const hof1 = (func1,numm)=>{
+//   for (let i = 0; i < numm ; i++) {
+//   func1()
+  
+//   }}
+
+//   hof1(func1,5)
+
+
+//   function first(name) {
+//     // console.log(`Hello ${name}`);
+//     return `Hello ${name}`;
+//   }
+  
+//   function second(string) {
+//     // console.log(`${string}, how are you?`);
+//     return `${string}, how are you?`;
+//   }
+  
+//   function functionHOF2(fn1, fn2, str) {
+//     return fn1(fn2(str));
+//   }
+  
+//   console.log(functionHOF2(first, second, `rohit`));
+
+  const func1 = ()=>{
+    console.log("Function 1");
+}
+
+const func2 = () => {
+    console.log("Function 2");
+}
+
+const HigherOrderFunction2 = (fun1,fun2,value) =>{
+    let res = 0;
+    for(let i=1;i<=value;i++){
+        fun1();
+        res += i;
+    }
+    for(let i = 0;i<res;i++){
+        fun2()
+    }
+}
+
+HigherOrderFunction2(func1,func2,2)
